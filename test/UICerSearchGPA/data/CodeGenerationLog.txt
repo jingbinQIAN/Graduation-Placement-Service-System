@@ -1,0 +1,516 @@
+****** Start Log Message ******
+Web Recorder version : 12.0.2739.0 
+Recording Mode: HTML-based script
+Not recording headers
+Not excluding content types
+Do not record this content types as a resource:
+	text/html
+	text/xml
+Reset context between actions
+Record non-HTML elements in current HTML function
+Protocol Type: Multi-QTWeb
+
+$$$$$$ End Log Message $$$$$$
+
+Code generation version: 12.0.2739.0
+
+****** Analyze segments filter initialization ******
+****** Request Header For Transaction With Id 26 ******
+GET /user/login HTTP/1.1
+Accept: text/html, application/xhtml+xml, image/jxr, */*
+Accept-Language: en-US,en;q=0.8,zh-Hans-CN;q=0.5,zh-Hans;q=0.3
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; rv:11.0) like Gecko
+UA-CPU: AMD64
+Accept-Encoding: gzip, deflate
+Host: 127.0.0.1:5000
+Connection: Keep-Alive
+
+
+$$$$$$ Request Header For Transaction With Id 26 Ended $$$$$$
+
+****** Response Header For Transaction With Id 26 ******
+HTTP/1.1 200 OK
+Server: Werkzeug/2.3.4 Python/3.8.3
+Date: Fri, 12 May 2023 11:39:45 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 531
+Set-Cookie: session=3ab4574a-fad1-4a9c-8c0a-c7c099409d98; Expires=Mon, 12 Jun 2023 11:39:45 GMT; HttpOnly; Path=/
+Connection: close
+
+
+$$$$$$ Response Header For Transaction With Id 26 Ended $$$$$$
+
+****** Response Body For Transaction With Id 26 ******
+<!doctype html>
+<title>Log In </title>
+<nav>
+  <h1>Demo GPS </h1>
+
+</nav>
+<section class="content">
+  <header>
+    
+  <h1>Log In</h1>
+
+  </header>
+ 
+  
+  <form method="post">
+    <label for="email">Email</label>
+    <input name="email" id="username" required>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" required>
+    <input type="submit" value="Log In">
+    <input type="button" value="Register" onclick="location='/user/register'">
+    
+         
+    
+  </form>
+
+</section>
+$$$$$$ Response Body For Transaction With Id 26 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+The Node has no URL
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 26 ****** (Location Flag : tFlagInsertEnd, Location ID : 26)
+	web_url("login",
+		"URL=http://127.0.0.1:5000/user/login",
+		"Resource=0",
+		"RecContentType=text/html",
+		"Referer=",
+		"Snapshot=t1.inf",
+		"Mode=HTML",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 26 Ended $$$$$$
+
+****** Request Header For Transaction With Id 33 ******
+POST /user/login HTTP/1.1
+Accept: text/html, application/xhtml+xml, image/jxr, */*
+Referer: http://127.0.0.1:5000/user/login
+Accept-Language: en-US,en;q=0.8,zh-Hans-CN;q=0.5,zh-Hans;q=0.3
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; rv:11.0) like Gecko
+Content-Type: application/x-www-form-urlencoded
+UA-CPU: AMD64
+Accept-Encoding: gzip, deflate
+Host: 127.0.0.1:5000
+Content-Length: 48
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: session=3ab4574a-fad1-4a9c-8c0a-c7c099409d98
+
+
+$$$$$$ Request Header For Transaction With Id 33 Ended $$$$$$
+
+****** Request Body For Transaction With Id 33 ******
+email=q030026117@mail.uic.edu.cn&password=qqqqqq
+$$$$$$ Request Body For Transaction With Id 33 Ended $$$$$$
+
+****** Response Header For Transaction With Id 33 ******
+HTTP/1.1 302 FOUND
+Server: Werkzeug/2.3.4 Python/3.8.3
+Date: Fri, 12 May 2023 11:40:22 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 215
+Location: /user/userCase
+Set-Cookie: session=3ab4574a-fad1-4a9c-8c0a-c7c099409d98; Expires=Mon, 12 Jun 2023 11:40:22 GMT; HttpOnly; Path=/
+Connection: close
+
+
+$$$$$$ Response Header For Transaction With Id 33 Ended $$$$$$
+
+****** Response Body For Transaction With Id 33 ******
+<!doctype html>
+<html lang=en>
+<title>Redirecting...</title>
+<h1>Redirecting...</h1>
+<p>You should be redirected automatically to the target URL: <a href="/user/userCase">/user/userCase</a>. If not, click the link.
+
+$$$$$$ Response Body For Transaction With Id 33 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/user/login
+Form: name= action=
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Request Header For Transaction With Id 38 ******
+GET /user/userCase HTTP/1.1
+Accept: text/html, application/xhtml+xml, image/jxr, */*
+Referer: http://127.0.0.1:5000/user/login
+Accept-Language: en-US,en;q=0.8,zh-Hans-CN;q=0.5,zh-Hans;q=0.3
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; rv:11.0) like Gecko
+UA-CPU: AMD64
+Accept-Encoding: gzip, deflate
+Host: 127.0.0.1:5000
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: session=3ab4574a-fad1-4a9c-8c0a-c7c099409d98
+
+
+$$$$$$ Request Header For Transaction With Id 38 Ended $$$$$$
+
+****** Response Header For Transaction With Id 38 ******
+HTTP/1.1 200 OK
+Server: Werkzeug/2.3.4 Python/3.8.3
+Date: Fri, 12 May 2023 11:40:23 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 593
+Set-Cookie: session=3ab4574a-fad1-4a9c-8c0a-c7c099409d98; Expires=Mon, 12 Jun 2023 11:40:23 GMT; HttpOnly; Path=/
+Connection: close
+
+
+$$$$$$ Response Header For Transaction With Id 38 Ended $$$$$$
+
+****** Response Body For Transaction With Id 38 ******
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Cases</title>
+    <h1>Welcome!</h1>
+</head>
+<body>
+<button type="submit"  onclick="location='/user/changePwd'">Change Password</button>
+<button type="submit"  onclick="location='/user/search'">Search</button>
+<button type="submit"  onclick="location='/report/export'">View Yearly Report</button>
+<button type="submit"  onclick="location='/offer/reportoffer'">Post Offer Information</button>
+<button type="submit"  onclick="location='/knowledge/viewKnowledgePoint'">View Knowledge Point</button>
+</body>
+</html>
+$$$$$$ Response Body For Transaction With Id 38 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/user/login
+Form: name= action=
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 38 ****** (Location Flag : tFlagInsertEnd, Location ID : 38)
+	web_submit_form("login_2",
+		"Snapshot=t2.inf",
+		ITEMDATA,
+		"Name=email", "Value=q030026117@mail.uic.edu.cn", ENDITEM,
+		"Name=password", "Value=qqqqqq", ENDITEM,
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 38 Ended $$$$$$
+
+****** Request Header For Transaction With Id 45 ******
+GET /user/search HTTP/1.1
+Accept: text/html, application/xhtml+xml, image/jxr, */*
+Referer: http://127.0.0.1:5000/user/userCase
+Accept-Language: en-US,en;q=0.8,zh-Hans-CN;q=0.5,zh-Hans;q=0.3
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; rv:11.0) like Gecko
+UA-CPU: AMD64
+Accept-Encoding: gzip, deflate
+Host: 127.0.0.1:5000
+Connection: Keep-Alive
+Cookie: session=3ab4574a-fad1-4a9c-8c0a-c7c099409d98
+
+
+$$$$$$ Request Header For Transaction With Id 45 Ended $$$$$$
+
+****** Response Header For Transaction With Id 45 ******
+HTTP/1.1 200 OK
+Server: Werkzeug/2.3.4 Python/3.8.3
+Date: Fri, 12 May 2023 11:40:49 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1725
+Set-Cookie: session=3ab4574a-fad1-4a9c-8c0a-c7c099409d98; Expires=Mon, 12 Jun 2023 11:40:49 GMT; HttpOnly; Path=/
+Connection: close
+
+
+$$$$$$ Response Header For Transaction With Id 45 Ended $$$$$$
+
+****** Response Body For Transaction With Id 45 ******
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <h1>Search admission requirements </h1>
+</head>
+<body>
+  <form method="post">
+    <div class="layui-inline">
+        <select  id="select1" name="select1" lay-filter="select1" onchange="showform()">
+            <option>---Please select---</option>
+            <option value="gpa">Search through GPA</option>
+            <option value="uname">Search through University Name</option>
+        </select>
+    </div>
+    <div class="form-row" id="gpa" style="display: none;">
+
+        <label for="gpa">GPA</label>
+        <input type="number"  name="gpa" id="gpa" min="0.00" max="4.00" step="0.01" value="0.00" required>
+        <input type="submit" value="Submit">
+        <input type="button" value="Back" onclick="location='/user/search'">
+    </div>
+    <div class="form-row" id="uname" style="display: none;">
+        <label for="gpa">University</label>
+        <input type="text"  name="uname" id="uname" value="something" required>
+        <input type="submit" value="Submit">
+        <input type="button" value="Back" onclick="location='/user/search'">
+    </div>
+  </form>
+  
+         
+    
+<script>
+  const select = document.querySelector('#select1')
+  const gpa = document.querySelector('#gpa')
+  const uname = document.querySelector('#uname')
+  function showform() {
+      if (select.value === 'gpa') {
+        gpa.style.display = 'block'
+        uname.style.display = 'none'
+      } else if (select.value === 'uname') {
+        gpa.style.display = 'none'
+        uname.style.display = 'block'
+      } else {
+          ref.style.display = 'none'
+          danger.style.display = 'none'
+      }
+  }
+</script>
+</body>
+</html>
+$$$$$$ Response Body For Transaction With Id 45 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/user/userCase
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 45 ****** (Location Flag : tFlagInsertEnd, Location ID : 45)
+	web_url("search",
+		"URL=http://127.0.0.1:5000/user/search",
+		"Resource=0",
+		"RecContentType=text/html",
+		"Referer=http://127.0.0.1:5000/user/userCase",
+		"Snapshot=t3.inf",
+		"Mode=HTML",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 45 Ended $$$$$$
+
+****** Request Header For Transaction With Id 49 ******
+POST /user/search HTTP/1.1
+Accept: text/html, application/xhtml+xml, image/jxr, */*
+Referer: http://127.0.0.1:5000/user/search
+Accept-Language: en-US,en;q=0.8,zh-Hans-CN;q=0.5,zh-Hans;q=0.3
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; rv:11.0) like Gecko
+Content-Type: application/x-www-form-urlencoded
+UA-CPU: AMD64
+Accept-Encoding: gzip, deflate
+Host: 127.0.0.1:5000
+Content-Length: 35
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: session=3ab4574a-fad1-4a9c-8c0a-c7c099409d98
+
+
+$$$$$$ Request Header For Transaction With Id 49 Ended $$$$$$
+
+****** Request Body For Transaction With Id 49 ******
+select1=gpa&gpa=3.5&uname=something
+$$$$$$ Request Body For Transaction With Id 49 Ended $$$$$$
+
+****** Response Header For Transaction With Id 49 ******
+HTTP/1.1 200 OK
+Server: Werkzeug/2.3.4 Python/3.8.3
+Date: Fri, 12 May 2023 11:40:58 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2467
+Set-Cookie: session=3ab4574a-fad1-4a9c-8c0a-c7c099409d98; Expires=Mon, 12 Jun 2023 11:40:58 GMT; HttpOnly; Path=/
+Connection: close
+
+
+$$$$$$ Response Header For Transaction With Id 49 Ended $$$$$$
+
+****** Response Body For Transaction With Id 49 ******
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Result</title>
+    <h1>Search Result </h1>
+</head>
+<body>
+  <div class="row" id="gpa1" style="display: block;">
+    <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3>University and Program</h3>
+            </div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover">
+                        <thead>
+                        <tr>
+                          <td>ID</td>
+                          <td>ProgramName</td>
+                          <td>UniversityName</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr>
+                                <td>1</td>
+                                <td>eating</td>
+                                <td>UIC</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>2</td>
+                                <td>sleeping</td>
+                                <td>QAD</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>3</td>
+                                <td>joking</td>
+                                <td>NDH</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>4</td>
+                                <td>finance</td>
+                                <td>XP</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>5</td>
+                                <td>DS</td>
+                                <td>HKU</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>6</td>
+                                <td>CST</td>
+                                <td>SGL</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<input type="button" value="Back" onclick="location='/user/userCase'">
+
+
+
+</body>
+</html>
+$$$$$$ Response Body For Transaction With Id 49 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/user/search
+Form: name= action=
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 49 ****** (Location Flag : tFlagInsertEnd, Location ID : 49)
+	web_submit_form("search_2",
+		"Snapshot=t4.inf",
+		ITEMDATA,
+		"Name=select1", "Value=Search through GPA", ENDITEM,
+		"Name=gpa", "Value=3.5", ENDITEM,
+		"Name=uname", "Value=something", ENDITEM,
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 49 Ended $$$$$$
+
+****** Request Header For Transaction With Id 56 ******
+GET /user/userCase HTTP/1.1
+Accept: text/html, application/xhtml+xml, image/jxr, */*
+Referer: http://127.0.0.1:5000/user/search
+Accept-Language: en-US,en;q=0.8,zh-Hans-CN;q=0.5,zh-Hans;q=0.3
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; rv:11.0) like Gecko
+UA-CPU: AMD64
+Accept-Encoding: gzip, deflate
+Host: 127.0.0.1:5000
+Connection: Keep-Alive
+Cookie: session=3ab4574a-fad1-4a9c-8c0a-c7c099409d98
+
+
+$$$$$$ Request Header For Transaction With Id 56 Ended $$$$$$
+
+****** Response Header For Transaction With Id 56 ******
+HTTP/1.1 200 OK
+Server: Werkzeug/2.3.4 Python/3.8.3
+Date: Fri, 12 May 2023 11:41:07 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 593
+Set-Cookie: session=3ab4574a-fad1-4a9c-8c0a-c7c099409d98; Expires=Mon, 12 Jun 2023 11:41:07 GMT; HttpOnly; Path=/
+Connection: close
+
+
+$$$$$$ Response Header For Transaction With Id 56 Ended $$$$$$
+
+****** Response Body For Transaction With Id 56 ******
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Cases</title>
+    <h1>Welcome!</h1>
+</head>
+<body>
+<button type="submit"  onclick="location='/user/changePwd'">Change Password</button>
+<button type="submit"  onclick="location='/user/search'">Search</button>
+<button type="submit"  onclick="location='/report/export'">View Yearly Report</button>
+<button type="submit"  onclick="location='/offer/reportoffer'">Post Offer Information</button>
+<button type="submit"  onclick="location='/knowledge/viewKnowledgePoint'">View Knowledge Point</button>
+</body>
+</html>
+$$$$$$ Response Body For Transaction With Id 56 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/user/search
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 56 ****** (Location Flag : tFlagInsertEnd, Location ID : 56)
+	web_url("userCase",
+		"URL=http://127.0.0.1:5000/user/userCase",
+		"Resource=0",
+		"RecContentType=text/html",
+		"Referer=http://127.0.0.1:5000/user/search",
+		"Snapshot=t5.inf",
+		"Mode=HTML",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 56 Ended $$$$$$
+

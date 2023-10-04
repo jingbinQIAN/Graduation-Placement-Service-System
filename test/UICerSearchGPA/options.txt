@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\q030026117\Desktop\UICerSearchGPA
+-IC:\Program Files (x86)\HP\LoadRunner\include
+-ec:\users\q030026117\desktop\uicersearchgpa\\logfile.log
+c:\users\q030026117\desktop\uicersearchgpa\\combined_UICerSearchGPA.c
+c:\users\q030026117\desktop\uicersearchgpa\\pre_cci.c

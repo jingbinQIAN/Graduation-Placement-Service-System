@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+  h1{color:white;text-align:center;margin-left:5%;-webkit-text-stroke:1px #828282;}
+  h2{color:whitesmoke;text-align:center;}
+  h4{height: 20px;line-height: 20px;margin-top: 10px;width: 100%;color: #02ad94;font-size: 18px;font-weight: bold;text-align: center;}
+  .i{text-align:center;margin:auto;margin-top:1%;margin-bottom:5%;height: 86px;width: 400px;background-color: rgba(255, 255, 255, 0.8);padding: 10px 20px 10px 20px;border-radius: 6px;}
+  body{background: url("../static/back.png")}
+  form{position: relative;width: 460px;height: 460px;background-color: rgba(251, 251, 251, 0.8);border: 1px solid #fff;border-radius: 4px;font-size: 20px;background-color: #08548f;font-weight: bold;color:white;text-align: center;}
+  input{font-size: 20px;}
+  .button1{margin-top: 15px;width: 120px;height: 30px;font-size: 13px;color: black;background:white;border: 2px solid #fff !important;font-weight: bold !important;}
+  .container{overflow:hidden;width: 460px;height: 460px;padding: 16px;background-color: rgba(251, 251, 251, 0.6);border: 1px;margin-top: 30px;border-radius: 4px;margin: auto;text-align: center;}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Generate Yearly Report</title>
+</head>
+    <div class="i">
+      <img src="../static/logo.png"/>
+      <h1 >GPS System</h1>
+    </div>
+<body>
+<div class="container">
+    <form method="post">
+        <h2>Generate Yearly Report</h2>
+        <label for="year-select">Choose a year:</label>
+
+        <select name="years" id="year-select">
+            <option value="">--Please choose an option--</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+        </select></br> </br>
+        <input class = "button1" value="Generate Report" type="submit"></br> </br>
+        <input class = "button1" type="button" value="Back" onclick="location='{{ url_for('user.userCase') }}'">
+        <div style="height:200px;width:400px;margin:0 auto;">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <p>{{ message }}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+    </form>
+</div>>
+</body>
+</html>

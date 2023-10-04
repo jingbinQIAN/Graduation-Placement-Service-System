@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+    h1{color:white;text-align:center;margin-left:5%;-webkit-text-stroke:1px #828282;}
+    h3{color:whitesmoke;text-align:center;}
+    .i{text-align:center;margin:0 auto;margin-top:1%;margin-bottom:5%;height: 86px;width: 400px;background-color: rgba(255, 255, 255, 0.8);padding: 10px 20px 10px 20px;border-radius: 6px;}  .selectbox{text-align:center;}
+    .selectbox{text-align:center;}
+    body{background: url('../static/back.png')}
+    form{position: relative;width: 1000px;border: 1px solid #fff;border-radius: 4px;font-size: 20px;background-color:#08548f;font-weight: bold;color:white;text-align: center;}
+    input{font-size: 18px;}
+    select{font-size: 18px;}
+    #button1{margin-top: 15px;width: 80px;height: 30px;font-size: 14px;color: black;background:white;border:0;border: 2px solid #fff !important;font-weight: bold !important;}
+    .row{position: relative;width: 1000px;height: 480px;background-color: rgba(251, 251, 251, 0.8);border: 1px solid #fff;border-radius: 4px;font-size: 20px;background-color:#08548f;font-weight: bold;color:white;text-align: center;}
+    .container{overflow:hidden;width: 1000px;height:480px;padding: 16px;background-color: rgba(251, 251, 251, 0.6);border: 1px solid #fff;border-radius: 4px;margin:0 auto;text-align: center;}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <link href="mystyle.css" rel = "stylesheet" type = "text/css"/>
+    <title>Search Result</title>
+    <div class="i">
+        <img src="../static/logo.png"/>
+        <h1 >GPS System</h1>
+    </div>
+</head>
+<body>
+<div class="container">
+<div class="row" id="uname1" style="display: block;">
+  <div class="col-md-6 col-sm-12 col-xs-12">
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h3>GPA range</h3>
+          </div>
+
+
+                  <table style="position: relative; margin: 0 auto; width: 500px; left: -20px">
+                      <thead>
+                      <tr>
+                        <td>Program</td>
+                        <td>University</td>
+                        <td>Low</td>
+                        <td>Up</td>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      {% for i in content %}
+                          <tr>
+                              <td>{{ i.name }}</td>
+                              <td>{{ i.universityname }}</td>
+                              <td>{{ i.GPAlow }}</td>
+                              <td>{{ i.GPAupper }}</td>
+                          </tr>
+                      {% endfor %}
+                      </tbody>
+                  </table>
+
+
+      </div>
+
+    </div>
+    <input id="button1" type="button" value="Back" onclick="location='{{ url_for('user.userCase') }}'">
+    </div>>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+Virtual User Script started at : 2023/5/12 21:21:54
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 12.0.0 for Windows 8; build 2739 (Nov 30 2014 23:13:05)  	[MsgId: MMSG-27143]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Run-Time Settings file: "C:\Users\q030026117\Desktop\UICerSearchGPA\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(4): web_url("login") started  	[MsgId: MMSG-26355]
+Action.c(4): web_url("login") was successful, 531 body bytes, 288 header bytes  	[MsgId: MMSG-26386]
+Action.c(13): web_submit_form("login_2") started  	[MsgId: MMSG-26355]
+Action.c(13): Submitting form to "http://127.0.0.1:5000/user/login", Target Frame=""  	[MsgId: MMSG-27978]
+Action.c(13): Redirecting "http://127.0.0.1:5000/user/login" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(13): To location "http://127.0.0.1:5000/user/userCase"  	[MsgId: MMSG-26693]
+Action.c(13): web_submit_form("login_2") was successful, 808 body bytes, 605 header bytes  	[MsgId: MMSG-26386]
+Action.c(22): Notify: Transaction "find_confirm_University" started.
+Action.c(24): web_url("search") started  	[MsgId: MMSG-26355]
+Action.c(24): web_url("search") was successful, 1725 body bytes, 289 header bytes  	[MsgId: MMSG-26386]
+Action.c(35): web_submit_form("search_2") started  	[MsgId: MMSG-26355]
+Action.c(35): Notify: Parameter Substitution: parameter "GPA" =  "3.5"
+Action.c(35): Submitting form to "http://127.0.0.1:5000/user/search", Target Frame=""  	[MsgId: MMSG-27978]
+Action.c(35): web_submit_form("search_2") was successful, 2467 body bytes, 289 header bytes  	[MsgId: MMSG-26386]
+Action.c(43): Notify: Transaction "find_confirm_University" ended with a "Pass" status (Duration: 0.0362 Wasted Time: 0.0018).
+Action.c(47): web_url("userCase") started  	[MsgId: MMSG-26355]
+Action.c(47): web_url("userCase") was successful, 593 body bytes, 288 header bytes  	[MsgId: MMSG-26386]
+Ending action Action.
+Ending iteration 1.
+Waiting 76.8950 seconds for iteration pacing.
+Starting iteration 2.
+Notify: Next row for parameter GPA = 2 [table  = GPA].
+Notify: Getting new value for parameter 'GPA': table = 'GPA.dat' column = '0' row = '2'.
+Starting action Action.
+Action.c(4): web_url("login") started  	[MsgId: MMSG-26355]
+Action.c(4): web_url("login") was successful, 531 body bytes, 288 header bytes  	[MsgId: MMSG-26386]
+Action.c(13): web_submit_form("login_2") started  	[MsgId: MMSG-26355]
+Action.c(13): Submitting form to "http://127.0.0.1:5000/user/login", Target Frame=""  	[MsgId: MMSG-27978]
+Action.c(13): Redirecting "http://127.0.0.1:5000/user/login" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(13): To location "http://127.0.0.1:5000/user/userCase"  	[MsgId: MMSG-26693]
+Action.c(13): web_submit_form("login_2") was successful, 808 body bytes, 605 header bytes  	[MsgId: MMSG-26386]
+Action.c(22): Notify: Transaction "find_confirm_University" started.
+Action.c(24): web_url("search") started  	[MsgId: MMSG-26355]
+Action.c(24): web_url("search") was successful, 1725 body bytes, 289 header bytes  	[MsgId: MMSG-26386]
+Action.c(35): web_submit_form("search_2") started  	[MsgId: MMSG-26355]
+Action.c(35): Notify: Parameter Substitution: parameter "GPA" =  "2.7"
+Action.c(35): Submitting form to "http://127.0.0.1:5000/user/search", Target Frame=""  	[MsgId: MMSG-27978]
+Action.c(35): web_submit_form("search_2") was successful, 1332 body bytes, 289 header bytes  	[MsgId: MMSG-26386]
+Action.c(43): Notify: Transaction "find_confirm_University" ended with a "Pass" status (Duration: 0.0368 Wasted Time: 0.0052).
+Action.c(47): web_url("userCase") started  	[MsgId: MMSG-26355]
+Action.c(47): web_url("userCase") was successful, 593 body bytes, 288 header bytes  	[MsgId: MMSG-26386]
+Ending action Action.
+Ending iteration 2.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+Vuser 0 (thread 14308), ended OK."

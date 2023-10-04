@@ -1,0 +1,66 @@
+[API Trapper      (2564: 470)] Recording in 32-bit mode: C:\Program Files (x86)\Internet Explorer\iexplore.exe
+[API Trapper      (2524:30dc)] Recording in 64-bit mode: C:\Program Files\Internet Explorer\IEXPLORE.EXE
+[Network Analyzer (2524:2c9c)] ------------------------------------------------------------------------------------------
+[Network Analyzer (2524:2c9c)] Load Network Traffic Analyzers:
+[Network Analyzer (2524:2c9c)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer (2524:2c9c)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter_x64.dll)
+[Network Analyzer (2524:2c9c)]     + Network Analyzer: api_http_filter_x64.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer (2524:2c9c)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter_x64.dll
+[Network Analyzer (2524:2c9c)]     Analyzer Module: QTWeb (value=GetWebSocketProtocolAnalyzer:WebSocketAnalyzer_x64.dll)
+[Network Analyzer (2524:2c9c)]     + Network Analyzer: WebSocketAnalyzer_x64.dll @ GetWebSocketProtocolAnalyzer Loaded!
+[Network Analyzer (2524:2c9c)]     Analyzer Module: local_server (value=)
+[Network Analyzer (2524:2c9c)] ------------------------------------------------------------------------------------------
+[Network Analyzer (2524:2c34)] Address lookup for T8303063 = 172.16.182.244
+[API Trapper      (325c:3424)] Recording in 64-bit mode: C:\Program Files (x86)\Microsoft\Edge\Application\113.0.1774.35\BHO\ie_to_edge_stub.exe
+[Network Analyzer (2524:2c9c)] Address lookup for T8303063 = 172.16.182.244
+[Network Analyzer (2524:2c9c)] Request Connection: Remote Server @ 127.0.0.1:5000   (Service=)  (Sid=  1)  PROXIED!
+[Network Analyzer (2524:345c)] Address lookup for T8303063 = 172.16.182.244
+[Network Analyzer (2524:377c)] Address lookup for T8303063 = 172.16.182.244
+[Web Request      (2524:2c34)] "GET /user/login"   
+[Network Analyzer (2524:2c34)]   (Sid:  1) Client -> Server @ : 331 bytes (Service=HTTP)
+[Network Analyzer (2524:345c)] Request Connection: Remote Server @ 104.86.77.70:443   (Service=)  (Sid=  2)  PROXIED!
+[Network Analyzer (2524:377c)] Request Connection: Remote Server @ 104.86.77.70:443   (Service=)  (Sid=  3)  PROXIED!
+[Network Analyzer (2524:2c34)]   (Sid:  1) Server -> Client : 288 bytes  (Service=HTTP)
+[Network Analyzer (2524:2c34)]   (Sid:  1) Server -> Client : 531 bytes  (Service=HTTP)
+[Network Analyzer (2524:2c34)]   (Sid:  1) Connection Terminated (by Server)
+[API Trapper      (22c0:3520)] Recording in 64-bit mode: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+[API Trapper      (1ef4:3b90)] Recording in 64-bit mode: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+[API Trapper      (2a08:27a0)] Recording in 64-bit mode: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+[Net An. Error    (2524:364c)]   (Sid:  2) SSL handshake with remote server Failed!
+[Net An. Error    (2524:3a90)]   (Sid:  3) SSL handshake with remote server Failed!
+[Network Analyzer (2524:2c9c)] Address lookup for T8303063 = 172.16.182.244
+[Network Analyzer (2524:345c)] Address lookup for T8303063 = 172.16.182.244
+[Network Analyzer (2524:345c)] Request Connection: Remote Server @ 127.0.0.1:5000   (Service=)  (Sid=  4)  PROXIED!
+[Web Request      (2524:2c34)] "POST /user/login"   
+[Network Analyzer (2524:2c34)]   (Sid:  4) Client -> Server @ : 571 bytes (Service=HTTP)
+[Network Analyzer (2524:2c34)]   (Sid:  4) Server -> Client : 532 bytes  (Service=HTTP)
+[Network Analyzer (2524:2c34)]   (Sid:  4) Connection Terminated (by Client)
+[Network Analyzer (2524:345c)] Address lookup for T8303063 = 172.16.182.244
+[Network Analyzer (2524:345c)] Request Connection: Remote Server @ 127.0.0.1:5000   (Service=)  (Sid=  5)  PROXIED!
+[Web Request      (2524:2c34)] "GET /user/userCase"   
+[Network Analyzer (2524:2c34)]   (Sid:  5) Client -> Server @ : 456 bytes (Service=HTTP)
+[Network Analyzer (2524:2c34)]   (Sid:  5) Server -> Client : 881 bytes  (Service=HTTP)
+[Network Analyzer (2524:2c34)]   (Sid:  5) Connection Terminated (by Server)
+[Net An. Warning  (2524:2c9c)] Request Connection: Remote Server @ 117.18.232.200:443 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10060)
+[Network Analyzer (2524:2e8c)] Address lookup for T8303063 = 172.16.182.244
+[Network Analyzer (2524:2e8c)] Request Connection: Remote Server @ 127.0.0.1:5000   (Service=)  (Sid=  6)  PROXIED!
+[Network Analyzer (2524:3718)] Address lookup for T8303063 = 172.16.182.244
+[Web Request      (2524:2c34)] "GET /user/search"   
+[Network Analyzer (2524:2c34)]   (Sid:  6) Client -> Server @ : 432 bytes (Service=HTTP)
+[Network Analyzer (2524:3718)] Request Connection: Remote Server @ 127.0.0.1:5000   (Service=)  (Sid=  7)  PROXIED!
+[Network Analyzer (2524:2c34)]   (Sid:  6) Server -> Client : 289 bytes  (Service=HTTP)
+[Network Analyzer (2524:2c34)]   (Sid:  6) Server -> Client : 1725 bytes  (Service=HTTP)
+[Network Analyzer (2524:2c34)]   (Sid:  6) Connection Terminated (by Server)
+[Net An. Warning  (2524:2c9c)] Request Connection: Remote Server @ 117.18.232.200:443 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10060)
+[Web Request      (2524:2c34)] "POST /user/search"   
+[Network Analyzer (2524:2c34)]   (Sid:  7) Client -> Server @ : 560 bytes (Service=HTTP)
+[Network Analyzer (2524:2c34)]   (Sid:  7) Server -> Client : 2756 bytes  (Service=HTTP)
+[Network Analyzer (2524:2c34)]   (Sid:  7) Connection Terminated (by Client)
+[Network Analyzer (2524:29b8)] Address lookup for T8303063 = 172.16.182.244
+[Network Analyzer (2524:29b8)] Request Connection: Remote Server @ 127.0.0.1:5000   (Service=)  (Sid=  8)  PROXIED!
+[Network Analyzer (2524:345c)] Address lookup for T8303063 = 172.16.182.244
+[Web Request      (2524:2c34)] "GET /user/userCase"   
+[Network Analyzer (2524:2c34)]   (Sid:  8) Client -> Server @ : 432 bytes (Service=HTTP)
+[Network Analyzer (2524:345c)] Request Connection: Remote Server @ 127.0.0.1:5000   (Service=)  (Sid=  9)  PROXIED!
+[Network Analyzer (2524:2c34)]   (Sid:  8) Server -> Client : 881 bytes  (Service=HTTP)
+[Network Analyzer (2524:2c34)]   (Sid:  8) Connection Terminated (by Client)

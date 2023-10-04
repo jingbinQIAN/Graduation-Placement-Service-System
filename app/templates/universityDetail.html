@@ -1,0 +1,65 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <style type="text/css">
+      h1{color:white;text-align:center;margin-left:5%;-webkit-text-stroke:1px #828282;}
+      h3{color:whitesmoke;text-align:center;}
+      h4{height: 20px;line-height: 20px;margin-top: 10px;width: 100%;color: #02ad94;font-size: 18px;font-weight: bold;text-align: center;}
+      .i{text-align:center;margin:auto;margin-top:1%;margin-bottom:5%;height: 86px;width: 400px;background-color: rgba(255, 255, 255, 0.8);padding: 10px 20px 10px 20px;border-radius: 6px;}
+      body{background: url("../static/back.png")}
+      form{position: relative;width: 600px;height: 480px;background-color: rgba(251, 251, 251, 0.8);border: 1px solid #fff;border-radius: 4px;font-size: 20px;background-color: #08548f;font-weight: bold;color:white;text-align: center;}
+      input{font-size: 15px;}
+      .button1{margin-top: 15px;width: 80px;height: 30px;font-size: 14px;color: black;background:white;border: 2px solid #fff !important;font-weight: bold !important;}
+      .container{overflow:hidden;width: 600px;height: 480px;padding: 16px;background-color: rgba(251, 251, 251, 0.6);border: 1px;margin-top: 30px;border-radius: 4px;margin: auto;text-align: center;}
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <title>Provide Knowledge Point</title>
+
+    </head>
+        <div class="i">
+          <img src="../static/logo.png"/>
+          <h1 >GPS System</h1>
+        </div>
+    <body>
+    <div class="container">
+    <form  method="post" enctype="multipart/form-data">
+        <h1>Provide Knowledge Point</h1>
+        <h3>Sorry we did not record your University, Please give us more detail about this University </h3>
+
+
+        <label for="college">University/College Name</label>
+        <input type="text" name="college" id="college" required> </br> </br>
+
+        <label for="collegecity">City of the University/College </label>
+        <input type="text" name="collegecity" id="collegecity" required> </br> </br>
+
+        <label for="program">Program Name of knowledge point</label>
+        <input type="text" name="program" id="program" required> </br> </br>
+
+        <label for="courseName">Course Name of knowledge point</label>
+        <input type="text" name="courseName" id="courseName" required> </br> </br>
+
+        <label for="comment">Share Knowledge Point of this Course Here:</label></br> </br>
+        <textarea  id="comment" name="comment" rows="6" cols="80"  placeholder="Share Comments" required></textarea> </br> </br>
+
+        <label >Visibility (Choose what item you want to show)</label></br>
+        <input type="radio" name="name_visiable" id="name_visiable" value="1" /> Name (visiable)&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="year_visiable" id="year_visiable" value="1" /> Graduation year (visiable)&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="gender_visiable" id="gender_visiable" value="1" /> Gender (visiable)&nbsp;&nbsp;</br> </br>
+
+        <input type="submit" value="submit">
+        <input type="button" value="Back" onclick="location='{{ url_for('user.userCase')}}'">
+        <div style="height:200px;width:400px;margin:0 auto;">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <p>{{ message }}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+
+    </form>
+    </div>>
+    </body>
+    </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+  h1{color:white; border:;text-align:center;margin-left:5%;-webkit-text-stroke:1px #828282;}
+  .container{overflow:hidden;width: 460px;height: 460px;padding: 16px;background-color: rgba(251, 251, 251, 0.6);border: 1px;margin-top: 30px;border-radius: 4px;margin: auto;text-align: center;}
+  .i{text-align:center;margin:auto;margin-top:1%;margin-bottom:5%;height: 86px;width: 400px;background-color: rgba(255, 255, 255, 0.8);padding: 10px 20px 10px 20px;border-radius: 6px;}  .selectbox{text-align:center;}
+  body{background: url("../static/back.png")}
+  .inside{position: relative;width: 460px;height: 460px;background-color: rgba(251, 251, 251, 0.8);border: 1px solid #fff;border-radius: 4px;font-size: 20px;background-color: #08548f;font-weight: bold;color:white;text-align: center;}
+  h3{color:whitesmoke;text-align:center;}
+  .button_qjb {border-radius: 19px;background: #fedfe1; margin:0 auto;text-align:center; font-size: 20px;height: 30px; box-shadow: 3px 3px  10px  #fbc3cd}
+  .button {border-radius: 5px;background: #fedfe1; margin:0 auto;text-align:center; font-size: 20px;height: 30px; box-shadow: 1px 1px  6px  #fbc3cd}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>User Cases for Alumni</title>
+    <div class="i">
+      <img src="../static/logo.png"/>
+      <h1 >Welcome, Alumni!</h1>
+    </div>
+</head>
+
+<body>
+    <div class="container">
+    <div class="inside">
+        <h3>Select An Function</h3>
+        <button class="button" type="submit"  onclick="location='{{ url_for('user.changePwd') }}'">Change Password</button><br><br>
+        <button class="button" type="submit"  onclick="location='{{ url_for('user.search') }}'">Search Admission Requirements</button><br><br>
+        <button class="button" type="submit"  onclick="location='{{ url_for('offer.reportoffer') }}'">Provide Offer Information</button><br><br>
+        <button class="button" type="submit"  onclick="location='{{ url_for('knowledge.provideKLPoint') }}'">Provide Knowledge Point</button><br><br>
+        <button class="button" type="submit"  onclick="location='{{ url_for('report.export') }}'">View Yearly Report</button><br><br>
+        <button class="button" type="submit"  onclick="location='{{ url_for('knowledge.viewKnowledgePoint') }}'">View Knowledge Point</button><br><br>
+        <button class="button" type="submit"  onclick="location='{{ url_for('user.login') }}'">Log Out</button><br><br>
+    </div>
+    </div>
+</body>
+</html>

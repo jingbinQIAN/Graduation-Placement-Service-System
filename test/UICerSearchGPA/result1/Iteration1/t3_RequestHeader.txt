@@ -1,0 +1,10 @@
+GET /user/search HTTP/1.1
+Referer: http://127.0.0.1:5000/user/userCase
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; rv:11.0) like Gecko
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.8,zh-Hans-CN;q=0.5,zh-Hans;q=0.3
+Accept: */*
+Connection: Keep-Alive
+Host: 127.0.0.1:5000
+Cookie: session=1e76ea63-1748-42c7-8679-4697b547739a
+

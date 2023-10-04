@@ -1,0 +1,10 @@
+[t4]
+SnapshotXmlFile=snapshot_4.xml
+ContentType=text/html
+StepName=Submit Form: search_2
+Total=1
+FileName1=t4.html
+RequestHeaderFile=t4_RequestHeader.txt
+ResponseHeaderFile=t4_ResponseHeader.txt
+RequestBodyFile=t4_RequestBody.txt
+URL1=http://127.0.0.1:5000/user/search

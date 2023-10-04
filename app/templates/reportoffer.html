@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+  h1{color:white;text-align:center;margin-left:5%;-webkit-text-stroke:1px #828282;}
+  h3{color:whitesmoke;text-align:center;}
+  h4{height: 20px;line-height: 20px;margin-top: 10px;width: 100%;color: #02ad94;font-size: 18px;font-weight: bold;text-align: center;}
+  .i{text-align:center;margin:auto;margin-top:1%;margin-bottom:5%;height: 86px;width: 400px;background-color: rgba(255, 255, 255, 0.8);padding: 10px 20px 10px 20px;border-radius: 6px;}
+  body{background: url("../static/back.png")}
+  form{position: relative;width: 600px;height: 480px;background-color: rgba(251, 251, 251, 0.8);border: 1px solid #fff;border-radius: 4px;font-size: 15px;background-color: #08548f;font-weight: bold;color:white;text-align: center;}
+  input{font-size: 10px;}
+  .button1{margin-top: 15px;width: 80px;height: 30px;font-size: 14px;color: black;background:white;border: 2px solid #fff !important;font-weight: bold !important;}
+  .container{overflow:hidden;width: 600px;height: 480px;padding: 16px;background-color: rgba(251, 251, 251, 0.6);border: 1px;margin-top: 30px;border-radius: 4px;margin: auto;text-align: center;}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Post Offer Information</title>
+</head>
+    <div class="i">
+      <img src="../static/logo.png"/>
+      <h1 >GPS System</h1>
+    </div>
+<body>
+<div class="container">
+<form  method="post" enctype="multipart/form-data">
+    <h3>Provide Offer Information </h3>
+    <label >Offer Type (Choose the offer type you want to provide)</label></br>
+    <input type="radio" name="offertype" id="offertype1" value="1" checked onclick="TaughtOffer();" /> Taught Offer&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="offertype" id="offertype2" value="2" onclick="ResearchOffer();" /> Research Offer&nbsp;&nbsp;
+    <input type="radio" name="offertype" id="offertype3" value="3" onclick="CompanyOffer();" /> Company Offer&nbsp;&nbsp;&nbsp;&nbsp;
+
+    </br></br>
+
+    <div id = "display_All" name = "All">
+
+        <label for="image">Upload offer photography:</label>
+        <input type="file" name="image" id = "image" required> </br> </br>
+
+        <label for="year">Enter the year when you got the offer:</label>
+        <input type="number" id = "year" name = "year" placeholder="YYYY" min="2005" max="2023"  required> </br> </br>
+
+    </div>
+
+    <div id = "display_CollegeOffer" name = "CollegeOffer">
+
+        <label for="college">University/College Name:</label>
+        <input type="text" name="college" id="college" placeholder="University/College name of your offer" > </br> </br>
+
+        <label for="programe">Program:</label>
+        <input type="text" name="programe" id="programe" placeholder="Program of your offer"> </br> </br>
+
+    </div>
+
+
+    <div id = "display_ResearchOffer" name = "ResearchOffer" style="display:none">
+
+        <label for="supervisor">Research supervisor:</label>
+        <input type="text" name="supervisor" id="supervisor" placeholder="Your research supervisor name"> </br> </br>
+
+        <label for="topic">Research topic:</label>
+        <input type="text" name="topic" id="topic" placeholder="Your research topic"> </br> </br>
+
+        <label >Do  you  have  published  a  paper:</label>
+        <input type="radio" name="paper" id="paperyes" value="1"/> YES&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="paper" id="paperno" value="0" /> NO  </br> </br>
+
+
+        <label >Do you have participated in a research project:</label>
+        <input type="radio" name="research" id="researchyes" value="1"  />YES&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="research" id="researchno" value="0" /> NO&nbsp;&nbsp; </br>
+
+    </div>
+
+    <div id = "display_CompanyOffer" name = "CompanyOffer" style="display:none">
+
+        <label for="companyname">Company Name:</label>
+        <input type="text" name="companyname" id="companyname" placeholder="Company name of your offer"> </br> </br>
+
+        <label for="companycountry">Country:</label>
+        <input type="text" name="companycountry" id="companycountry" placeholder="Country/City of your offer" > </br> </br>
+
+        <label for="jobtitle">Job Title:</label>
+        <input type="text" name="jobtitle" id="jobtitle" placeholder="Job title of your company offer"> </br> </br>
+
+        <label for="qualification">Qualification you have:</label>
+        <input type="text" name="qualification" id="qualification" placeholder="Enter qualification you have"> </br> </br>
+
+    </div>
+
+    <input class = "button1" type="submit" value="submit">
+    <input class = "button1" type="button" value="Back" onclick="location='{{ url_for('user.userCase')}}'">
+    <div style="height:200px;width:400px;margin:0 auto;">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p>{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+</form>
+</div>
+</body>
+</html>
+
+    <script>
+        function TaughtOffer() {
+			document.getElementById("display_All").style.display = "";
+			document.getElementById("display_CollegeOffer").style.display = "";
+
+			document.getElementById("display_ResearchOffer").style.display = "none";
+			document.getElementById("display_CompanyOffer").style.display = "none";
+
+		}
+
+		function ResearchOffer() {
+			document.getElementById("display_All").style.display = "";
+			document.getElementById("display_CollegeOffer").style.display = "";
+			document.getElementById("display_ResearchOffer").style.display = "";
+
+			document.getElementById("display_CompanyOffer").style.display = "none";
+
+		}
+
+		function CompanyOffer() {
+			document.getElementById("display_All").style.display = "";
+			document.getElementById("display_CompanyOffer").style.display = "";
+
+			document.getElementById("display_CollegeOffer").style.display = "none";
+			document.getElementById("display_ResearchOffer").style.display = "none";
+
+		}
+	</script>

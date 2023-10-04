@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+  h1{color:white; border:;text-align:center;margin-left:5%;-webkit-text-stroke:1px #828282;}
+  h2{color:whitesmoke;text-align:center;}
+  .container{overflow:hidden;width: 1000px;height: 460px;padding: 16px;background-color: rgba(251, 251, 251, 0.6);border: 1px;margin-top: 30px;border-radius: 4px;margin: auto;text-align: center;}
+  body{background: url("../static/back.png")}
+  form{position: relative;width: 1000px;height: 460px;background-color: rgba(251, 251, 251, 0.8);border: 1px solid #fff;border-radius: 4px;font-size: 20px;background-color: #08548f;font-weight: bold;color:white;text-align: center;}
+  table{position: relative; margin:0 auto;}
+  .i{text-align:center;margin:auto;margin-top:1%;margin-bottom:5%;height: 86px;width: 400px;background-color: rgba(255, 255, 255, 0.8);padding: 10px 20px 10px 20px;border-radius: 6px;}  .selectbox{text-align:center;}
+  .button1{margin-top: 15px;width: 80px;height: 30px;font-size: 14px;color: black;background:white;border: 2px solid #fff !important;font-weight: bold !important;}
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>View Knowledge Point</title>
+    <div class="i">
+        <img src="../static/logo.png"/>
+        <h1 >GPS System</h1>
+    </div>
+</head>
+<body>
+<div class="container">
+<form method="post">
+    <h2>View Knowledge Point</h2>
+  <input type="radio"  name="knowledgeType" value="University" onchange="enterName(this)">
+  <label>View by University</label><br>
+  <input type="radio" name="knowledgeType" value="Program" onchange="enterProgram(this)">
+  <label>View by Program</label><br>
+    <input class = "button1" type="button" value="Back" onclick="location='{{ url_for('user.userCase') }}'">
+
+  <table>
+  <tr id="university" style="display:none">
+   <td><strong>Please enter the university name</strong></td>
+   <td><input type="text" name="search1"></td>
+    <td><input class = "button1" value="Confirm" type="submit"></td>
+  </tr>
+  </table>
+
+  <table>
+  <tr id="program" style="display:none">
+   <td><strong>Please enter the program name</strong></td>
+   <td><input type="text" name="search2"></td>
+    <td><input class = "button1" value="Confirm" type="submit"></td>
+  </tr>
+  </table>
+<div style="height:300px;width:800px;overflow-y:scroll;margin:0 auto;">
+{% with messages = get_flashed_messages() %}
+         {% if messages %}
+               {% for message in messages %}
+                    <p>{{ message }}</p>
+               {% endfor %}
+         {% endif %}
+    {% endwith %}
+    <div>
+</form>
+    </div>
+
+</body>
+</html>
+
+<script>
+    function enterName(obj){
+        document.getElementById("university").style.display='block';
+        document.getElementById("program").style.display='none';
+    }
+    function enterProgram(obj){
+        document.getElementById("program").style.display='block';
+        document.getElementById("university").style.display='none';
+    }
+</script>
