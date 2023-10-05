@@ -1,10 +1,11 @@
 # The Graduation Placement Service Instructions
-
+## The design of this project follows the Software Development Life Cycle
 ### libraries that are used in this system
 
 ```py
 pip install flask pymysql flask_sqlalchemy flask_session faker werkzeug os
 ```
+
 
 ### Tips to run our main program:
 1. We used xampp to establish a virtual database.</br>
@@ -21,10 +22,16 @@ pip install flask pymysql flask_sqlalchemy flask_session faker werkzeug os
 
 ### Explanation of the files:
 1. In the root folder: <br>
+    "Graduation Placement Service v3.docx" is the descriptions of our project. <br>
     "teamwork.py" is the main function to run our project. <br>
     If you use PyCharm editor, open this file and trust the project. Then the whole project can be open and edited. <br>
     "gpsdatabase.sql" is the file for you to load our database. <br>
-2. In the folder "./app", there are the sub functions (codes) of our project. <br>
+2. In the folder "./demonstrations", there are the powerpoint slides and video of our project <br>
+3. In the folder "./documents": <br>
+    "SRS_v2.0.pdf" is the Software Requirement Specification <br>
+    "Architecture_Design.pdf" and "Detailed_Design.pdf" are the designs of our project. <br>
+    "Test_plan.pdf" and "Test_report.pdf" are the tests of some part of our codes. <br>
+4. In the folder "./app", there are the sub functions (codes) of our project. <br>
     "/app/models": the entities (classes) are there. <br>
     "/app/controller": the functions to implement all the use cases there. <br>
     "/app/templates": the html files for creating and decoration webpages. <br>
@@ -32,11 +39,11 @@ pip install flask pymysql flask_sqlalchemy flask_session faker werkzeug os
     "/app/static": the place to store the website images. <br>
     "/app/offerImages": the sample offer images for you to test the system (Provide Offer Information). <br>
     "/app/_pycache": the cache of python program, please ignore it. <br>
-3. In the folder "./test", there are the test codes for unit testing, LoadRunner testing. <br>
+5. In the folder "./test", there are the test codes for unit testing, LoadRunner testing. <br>
     "/test/test_login.py": the unit test for login. <br>
     "/test/unittestResult": the result of the login test. <br>
     "/test/UICerSearchGPA": the LoadRunner Script for UICer search admission requirement by GPA. 
-4. The folders ".idea", "__pycache", "flask_session": <br>
+6. The folders ".idea", "__pycache", "flask_session": <br>
     Please ignore them, they are automatically generate by python. <br>
     **If there is an error when using the website:** <br>
     "TypeError: '<' not supported between instances of 'NoneType' and 'float' " <br>
